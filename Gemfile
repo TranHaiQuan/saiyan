@@ -10,6 +10,12 @@ gem "uglifier", ">= 1.3.0"
 # App server
 gem "puma", "~> 3.7"
 
+# Support
+gem "config"
+
+# Redis
+gem "redis-rails"
+
 # ORM
 gem "mysql2", ">= 0.3.18", "< 0.5"
 
