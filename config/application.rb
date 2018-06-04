@@ -1,6 +1,6 @@
-require_relative 'boot'
+require_relative "boot"
 
-require 'rails/all'
+require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -18,5 +18,13 @@ module Saiyan
 
     I18n.config.available_locales = :vi
     I18n.default_locale = :vi
+
+    config.generators do |g|
+      g.template_engine nil
+      g.test_framework  nil
+      g.assets false
+      g.helper false
+      g.stylesheets false
+    end
   end
 end
