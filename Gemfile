@@ -6,6 +6,7 @@ gem "rails", "~> 5.1.6"
 gem "coffee-rails", "~> 4.2"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
+gem "jquery-rails"
 
 # App server
 gem "puma", "~> 3.7"
@@ -17,6 +18,10 @@ gem "devise"
 
 # Soft delete
 gem "paranoia", "~> 2.2"
+
+# Theme
+gem "bootstrap", "~> 4.1.1"
+gem "font-awesome-rails"
 
 group :development, :test do
   gem "better_errors"
