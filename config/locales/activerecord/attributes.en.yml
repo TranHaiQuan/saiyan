@@ -1,0 +1,9 @@
+en:
+  activerecord:
+    attributes:
+      admin:
+        current_password: "Current password"
+        password: "Password"
+        password_confirmation: "New password (confirmation)"
+        name: "Name"
+        email: "Email"

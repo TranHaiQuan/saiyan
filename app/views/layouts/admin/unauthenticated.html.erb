@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Saiyan</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img src="http://file.vforum.vn/hinh/2018/03/hinh-anh-hinh-nen-songoku-dep-nhat-tu-nho-den-lon-19.jpg">
+        </div>
+        <div class="col-md-5">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

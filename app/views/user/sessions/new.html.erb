@@ -1,0 +1,24 @@
+<div class="login-box" id="login_admin_form">
+  <div class="login-box-body">
+    <div class="text-center">
+      <h2 class="signin-title"><%= t "admin.info.signin" %></h2>
+      <img src="https://i.ebayimg.com/images/g/5iwAAOSwn1FZtwrw/s-l300.jpg" class="loggin-logo">
+    </div>
+    <%= render "shared/flash" %>
+    <div class="admin-login-area">
+      <%= form_for(:user, url: session_path(resource_name)) do |f| %>
+        <div class="form-group has-feedback">
+          <%= f.label :email, t("admin.info.email") %>
+          <%= f.text_field :email, autofocus: true, class: "form-control fix-square", autocomplete: "off", value: "" %>
+        </div>
+        <div class="form-group has-feedback">
+           <%= f.label :password, t("admin.info.password") %>
+          <%= f.password_field :password, autocomplete: "off", class: "form-control fix-square" %>
+        </div>
+        <div class="form-group">
+          <%= f.submit t("admin.info.signin"), class: "form-control btn btn-primary btn-block btn-flat btn-admin-login btn-submit-form fix-square" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
