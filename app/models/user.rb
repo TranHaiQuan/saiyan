@@ -4,6 +4,5 @@ class User < ApplicationRecord
 
   enum gender_id: {male: 1, female: 2}
 
-  validates :role_id, :name, presence: true
   validates :name, uniqueness: {case_sensitive: false}
 end

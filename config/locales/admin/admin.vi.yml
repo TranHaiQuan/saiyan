@@ -1,0 +1,11 @@
+vi:
+  admin:
+    info:
+      email: Email
+      password: Mật khẩu
+      password_confirmation: Xác nhận mật khẩu
+      name: Tên
+      age: Tuổi
+      gender_id: Giới tính
+      phone_number: Số điện thoại
+      signin: Đăng nhập

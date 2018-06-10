@@ -1,0 +1,11 @@
+en:
+  admin:
+    info:
+      email: Email
+      password: Password
+      password_confirmation: Password confirmation
+      name: name
+      age: Age
+      gender_id: Gender
+      phone_number: Phone number
+      signin: Sign in

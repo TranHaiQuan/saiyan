@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Saiyan</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img src="https://http2.mlstatic.com/poster-dragon-ball-son-goku-42x29cm-poster-anime-D_NQ_NP_682305-MLB25024833721_082016-F.jpg">
+        </div>
+        <div class="col-md-5">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
