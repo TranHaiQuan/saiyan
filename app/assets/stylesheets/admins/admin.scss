@@ -22,3 +22,18 @@
     text-transform: uppercase;
   }
 }
+
+.collapse {
+  margin-left: 0;
+  li a {
+    color: black;
+  }
+}
+
+#sidebar {
+  float: left;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
