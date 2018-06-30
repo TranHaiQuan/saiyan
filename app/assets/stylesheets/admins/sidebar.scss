@@ -1,0 +1,117 @@
+#body-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#sidebar-container {
+    min-height: 100vh;
+    background-color: #333;
+    padding: 0;
+}
+
+
+/* Sidebar sizes when expanded and expanded */
+
+.sidebar-expanded {
+    width: 230px;
+}
+
+.sidebar-collapsed {
+    width: 60px;
+}
+
+
+/* Menu item*/
+
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+
+/* Submenu item*/
+
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+.sub-menu {
+  padding-left: 10px;
+}
+
+
+/* Separators */
+
+.sidebar-separator-title {
+  background-color: #333;
+  height: 35px;
+}
+
+.sidebar-separator {
+  background-color: #333;
+  height: 25px;
+}
+
+.logo-separator {
+  background-color: #333;
+  height: 60px;
+}
+
+
+/* Closed submenu icon */
+
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \203A";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+
+/* Opened submenu icon */
+
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \2039";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+.nav-link {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.nav-item-link {
+  padding: 0.75rem 0.5rem 0
+}
+
+.navbar.bg-light {
+  background-color: #ffc107 !important;
+}
+
+.badge-notify{
+  background:red;
+  position:relative;
+  top: -15px;
+  left: -20px;
+}
+nav.navbar.navbar-padding {
+  padding-left: 70px;
+}
+
+.dropdown-menu.dropdown-menu-custom {
+  background-color: #ffc107 !important;
+  border-radius: 1px;
+  border: 0;
+}
+
+.list-group-item.list-group-item-custom {
+  padding-left: 10px;
+}
