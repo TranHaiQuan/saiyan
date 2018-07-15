@@ -1,2 +1,12 @@
 vi:
-  hello: "Hé Lô"
+  button:
+    save: "Lưu"
+    delete: "Xóa"
+    confirm: "Đồng ý"
+    cancel: "Hủy"
+  modal_confirm:
+    title_save_confirm: "Thông báo xác nhận Lưu!"
+    title_delete_confirm: "Thông báo xác nhận Xóa!"
+    content_not_send_email: "Lưu với nội dung đã nhập.</br>Bạn đồng ý xác nhận không?"
+    content_have_send_email: "Lưu với nội dung đã nhập và gửi email.</br>Bạn đồng ý xác nhận không?"
+    content_delete: "Xóa nội dung này</br>. Bạn đồng ý Xóa không?"

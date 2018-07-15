@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   scope module: :admin, path: :admins, as: :admins do
     root to: "homes#index", as: :admin_root
+    resources :admins
   end
 
   devise_for :users, controllers: {sessions: "user/sessions"}

@@ -1,0 +1,48 @@
+en:
+  activerecord:
+    errors: &errors
+      messages:
+        blank: "Please enter %{attribute}."
+        present: "%{attribute} must be blank."
+        confirmation: "The new password and %{attribute} does not match."
+        empty: "%{attribute} can't be empty."
+        equal_to: "%{attribute} must be equal to %{count}."
+        even: "%{attribute} must be even."
+        exclusion: "%{attribute} is reserved."
+        greater_than: "%{attribute} must be greater than %{count}."
+        greater_than_or_equal_to: "%{attribute} must be greater than or equal to %{count}."
+        inclusion: "%{attribute} is not included in the list."
+        invalid:  "%{attribute} is invalid."
+        less_than: "%{attribute} must be less than %{count}."
+        less_than_or_equal_to: "%{attribute} must be less than or equal to %{count}."
+        model_invalid: "Validation failed: %{errors}"
+        not_a_number: "Please enter %{attribute} with numbers"
+        not_an_integer: "Please enter %{attribute} with integers."
+        odd: "%{attribute} must be odd"
+        taken: "%{attribute} has already been taken."
+        too_long: "Please enter %{attribute} with %{count} characters or less."
+        too_short: "%{attribute} is too short (minimum is %{count} characters)."
+        wrong_length: "%{attribute} is the wrong length (should be %{count} characters)"
+        other_than: "%{attribute} must be other than %{count}"
+        same_old_password: "You can not set the same password as the current one."
+        wrong_format: "The %{attribute} format is incorrect."
+        invalid_date_format: "Please enter in DD/MM/YYYY format. Ex: 13/11/1996"
+        not_exist: "%{attribute} is not existed."
+        max_size_error: "Please select an image within %{max_size}"
+      models:
+        admin:
+          attributes:
+            email:
+              invalid: "The %{attribute} format is incorrect."
+        user:
+          attributes:
+            email:
+              invalid: "The %{attribute} format is incorrect."
+    activemodel:
+      errors:
+        <<: *errors
+    activerecord:
+      errors:
+        <<: *errors
+    models:
+      admin: "Admin"

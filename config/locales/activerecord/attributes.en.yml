@@ -7,3 +7,7 @@ en:
         password_confirmation: "New password (confirmation)"
         name: "Name"
         email: "Email"
+        birthday: "Birthday"
+        address: "Address"
+        phone_number: "Phone number"
+        gender_id: "Gender"

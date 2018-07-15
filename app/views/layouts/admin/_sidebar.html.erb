@@ -126,6 +126,24 @@
     </ul>
   </div>
   <div class="col">
-    <%= yield %>
+      <%= render "shared/flash" %>
+    <div class="container">
+      <% if content_for?(:page_title) %>
+        <div class="content-main-page-header">
+          <h2 class="main-page-title"><%= yield(:page_title) %></h2>
+          <% if content_for?(:new_element) %>
+            <%= link_to "New", yield(:new_element), class: "btn btn-sm btn-primary btn-new-element" %>
+          <% end %>
+          <% if content_for?(:back_link) %>
+            <% back_link_label = content_for?(:back_link_label) ? yield(:back_link_label) : t("layout.header.back_to_list") %>
+            <%= link_to back_link_label, yield(:back_link), class: "btn btn-sm btn-primary btn-back-to-list" %>
+          <% end %>
+        </div><br>
+      <% end %>
+      <% if content_for?(:sub_title) %>
+        <h4 class="sub-page-title"><%= yield(:sub_title) %></h4><br>
+      <% end %>
+      <%= yield %>
+    </div>
   </div>
 </div>

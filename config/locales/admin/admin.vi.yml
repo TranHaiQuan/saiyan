@@ -9,3 +9,6 @@ vi:
       gender_id: Giới tính
       phone_number: Số điện thoại
       signin: Đăng nhập
+      gender_ids:
+        male: Nam
+        female: Nữ

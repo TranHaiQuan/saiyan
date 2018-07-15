@@ -1,0 +1,43 @@
+<div class="form-group row">
+  <%= f.label :email, class: "col-md-3 control-label required" %>
+  <div class="col-md-9">
+    <%= f.text_field :email, class: "form-control", tabindex: 1 %>
+  </div>
+</div>
+<div class="form-group row">
+  <%= f.label :name, class: "col-md-3 control-label required" %>
+  <div class="col-md-9">
+    <%= f.text_field :name, class: "form-control", tabindex: 2 %>
+  </div>
+</div>
+<div class="form-group row">
+  <%= f.label :birthday, class: "col-md-3 control-label required" %>
+  <div class="col-md-9">
+  <%= f.text_field :birthday, class: 'form-control', id: "birthday-datepicker" %>
+  </div>
+</div>
+<div class="form-group row">
+  <%= f.label :gender_id, class: "col-md-3 control-label required" %>
+  <div class="col-md-9">
+    <%= f.select :gender_id, Admin.option_for_gender_id , {include_blank: false}, class: "form-control", tabindex: 4 %>
+  </div>
+</div>
+<div class="form-group row">
+  <%= f.label :address, class: "col-md-3 control-label required" %>
+  <div class="col-md-9">
+    <%= f.text_field :address, class: "form-control", tabindex: 5 %>
+  </div>
+</div>
+<div class="form-group row">
+  <%= f.label :phone_number, class: "col-md-3 control-label required" %>
+  <div class="col-md-9">
+    <%= f.text_field :phone_number, class: "form-control", tabindex: 6 %>
+  </div>
+</div>
+<a class="btn btn-primary" tabindex="9" data-toggle="modal" data-target="#confirm-modal">
+  <%= t "button.save" %>
+</a>
+
+<%= render "shared/modal_submit_confirm", title_confirm: t("modal_confirm.title_save_confirm"),
+  content_confirm: t("modal_confirm.content_not_send_email").html_safe, submit_modal_id: "submit-save-admin",
+  button_color: "primary" %>

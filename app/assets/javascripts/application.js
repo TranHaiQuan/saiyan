@@ -16,4 +16,6 @@
 //= require popper
 //= require bootstrap
 //= require bootstrap-sprockets
-//= require_tree .
+//= require ./libs/moment-with-locales
+//= require ./libs/datepicker
+//= require_tree
