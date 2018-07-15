@@ -1,0 +1,27 @@
+<div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">
+          <%= title_confirm %>
+        </h4>
+        <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <%= content_confirm %>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="text-left">
+          <button id="<%= submit_modal_id %>" class="btn btn-<%= button_color %> btn-ok btn-submit-form-ajax">
+            <%= t "button.confirm" %>
+          </button>
+          <a data-dismiss="modal" class="btn btn-default pull-right btn-submit-size">
+            <%= t "button.cancel" %>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

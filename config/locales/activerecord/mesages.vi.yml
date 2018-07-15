@@ -1,0 +1,48 @@
+vi:
+  activerecord:
+    errors: &errors
+      messages:
+        blank: "%{attribute} không đưọc để trống."
+        present: "%{attribute} cần phải để trắng."
+        confirmation: "Mật khẩu mới và %{attribute} không khớp nhau."
+        empty: "%{attribute} không đưọc để trống."
+        equal_to: "%{attribute} phải bằng %{count}."
+        even: "%{attribute} phải là số chẵn."
+        exclusion: "%{attribute} này đã đưọc đặt trước."
+        greater_than: "%{attribute} phải lớn hơn %{count}."
+        greater_than_or_equal_to: "%{attribute} must be greater than or equal to %{count}."
+        inclusion: "%{attribute} này không có trong danh sách."
+        invalid:  "%{attribute} này không hợp lệ."
+        less_than: "%{attribute} phải nhỏ hơn %{count}."
+        less_than_or_equal_to: "%{attribute} phải lớn hơn hoặc bằng %{count}."
+        model_invalid: "Ràng buộc không hợp lệ: %{errors}."
+        not_a_number: Hãy nhập %{attribute} với định dạng là số.
+        not_an_integer: Hãy nhập %{attribute} với định dạng là số nguyên.
+        odd: "%{attribute} phải là số lẻ."
+        taken: "%{attribute} đã tồn tại."
+        too_long: "Hãy nhập %{attribute} với %{count} ký tự hoặc nhỏ hơn."
+        too_short: "%{attribute} quá ngắn (nhỏ nhất là %{count} ký tự)."
+        wrong_length: "%{attribute} sai chiều dài (nên để là %{count} ký tự)."
+        other_than: "%{attribute} cần phải khác %{count}."
+        same_old_password: "Không đưọc nhập mật khẩu mới giống mật khẩu cũ."
+        wrong_format: "%{attribute} có định dạng đang sai"
+        invalid_date_format: "Hãy nhập ngày tháng với định dạng DD/MM/YYYY. Vd: 13/11/1996"
+        not_exist: "%{attribute} không tồn tại"
+        max_size_error: "Hãy chọn ảnh có kích thước không quá %{max_size}."
+      models:
+        admin:
+          attributes:
+            email:
+              invalid: "%{attribute} sai định dạng."
+        user:
+          attributes:
+            email:
+              invalid: "%{attribute} sai định dạng."
+    activemodel:
+      errors:
+        <<: *errors
+    activerecord:
+      errors:
+        <<: *errors
+    models:
+      admin: Admin

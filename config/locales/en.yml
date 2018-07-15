@@ -1,2 +1,12 @@
 en:
-  hello: "Hello world"
+  button:
+    save: "Save"
+    delete: "Delete"
+    confirm: "OK"
+    cancel: "Cancel"
+  modal_confirm:
+    title_save_confirm: "Save modal!"
+    title_delete_confirm: "Delete modal"
+    content_not_send_email: "Save with content inputed.</br>Are you confirm?"
+    content_have_send_email: "Save with content inputed and send email.</br>Are you confirm?"
+    content_delete: "Delete this content</br>. Are you Delete?"

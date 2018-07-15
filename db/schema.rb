@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180610024214) do
+ActiveRecord::Schema.define(version: 20180708075752) do
 
   create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
     t.string "email", default: "", null: false
@@ -24,13 +24,13 @@ ActiveRecord::Schema.define(version: 20180610024214) do
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
     t.string "name"
-    t.integer "age"
     t.integer "gender_id"
     t.string "address"
     t.string "phone_number"
     t.string "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "birthday"
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
